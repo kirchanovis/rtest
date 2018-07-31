@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Добавление материала</h1>
+      <div class="form">
+        <form method = "POST" onsubmit = "validate()">
+          <div class="form__block">
+            <input type="text" class="form__text form__text_border form__text_max" placeholder="Заголовок" name="title" >
+          </div>
+          <div class="form__block">
+            <input type="text" class="form__text form__text_border form__text_max" placeholder="Краткое описание" name="description" >
+          </div>
+          <div class="form__block">
+            <div class="form__elem form__elem_hor form__elem_padding">
+              <select name="category" placeholder="Рубрика" class="form__select form__select_one form__select_border">
+                <option value="" disabled selected>Рубрика</option>
+                <option value="news">Новости</option>
+                <option value="science">Наука</option>
+                <option value="tech">Технологии</option>
+              </select>
+            </div>
+            <div class="form__elem form__elem_hor form__elem_padding">
+              <select name="author" class="form__select form__select_one form__select_border">
+                <option value="" disabled selected>Автор</option>
+                <option value="constantin">Константин Константинопольский</option>
+                <option value="senya">Сеня Петровский</option>
+              </select>
+            </div>
+            <div class="form__elem form__elem_hor form__elem_padding">
+              <input type="date" class="form__date form__date_one form__date_border" name="date">
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+          <div class="form__block">
+            <div class="form__elem form__elem_hor form__elem_top form__elem_one form__elem_padding">
+              <input type="checkbox" class="form__check form__check_border" name="fitcher" id="fitcher" >
+              <label for="fitcher" class="form__label">Фичер</label>
+            </div>
+            <div class="form__elem form__elem_hor form__elem_top form__elem_one form__elem_padding">
+              <input type="checkbox" class="form__check form__check_border" name="column" id="column" >
+              <label for="column" class="form__label">Колонка</label>
+            </div>
+            <div class="form__elem form__elem_hor form__elem_padding">
+              <input type="submit" class="form__submit form__submit_two form__submit_border" name="Опубликовать" >
+            </div>
+            <div style="clear: both;"></div>
+          </form>
+        </div>
+      </div>
+        <div class="news">
+          <div class="news__block news__padding news__block_big">
+            <div class="news__category news__category_bg">Технологии</div>
+            <div class="news__background-photo" style="background-image: url(../img/news1.png)"></div>
+            <div class="news__background"></div>
+            <div class="news__title">The end of the world occured pretty much as we had predicted.  Too many humans... not enough space or resources to go around</div>
+          </div>
+          <div class="news__block news__padding">
+            <div class="news__category news__category_bg">Технологии</div>
+            <div class="news__photo" style="background-image: url(../img/400.jpg)"></div>
+            <div class="news__title-aux">War. war never changes</div>
+            <div class="news__content">The end of the world occured pretty much as we had predicted</div>
+            <div class="news__footer">22.03 • 12:00 • Сидор Сидоров</div>
+          </div>
+          <div class="news__block news__padding">
+            <div class="news__author avatar">
+              <img src="../img/avatar.jpg" alt="avatar" class="avatar__photo avatar__photo_big">
+              <div class="avatar__name">Константин Константинопольский</div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="news__title-aux">The end of the world occured pretty much as we had predicted</div>
+            <div class="news__footer">22.03 • 12:00 • Сидор Сидоров</div>
+          </div>
+          <div class="news__block news__padding">
+            <div class="news__category news__category_bg">Наука</div>
+            <div class="news__photo" style="background-image: url(../img/401.jpg)"></div>
+            <div class="news__title-aux">War. war never changes</div>
+            <div class="news__content">The end of the world occured pretty much as we had predicted</div>
+            <div class="news__footer">22.03 • 12:00 • <br/>Константин Константинопольский</div>
+          </div>
+          <div class="news__block news__padding">
+            <div class="news__category">Новости</div>
+            <div class="news__title-aux">Из службы безопасности МВД уволились двое высокопоставленных полицейских</div>
+            <div class="news__footer">22.03 • 12:00 • Сидор Сидоров</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

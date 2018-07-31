@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700');
+$mainFontFamily:'Fira Sans', sans-serif;
+$h1FontFamily:'Merriweather', serif;
+
+
+$H2Size:24px;
+$H2LH:30px;
+$H2Weight:700;
+$H2LS:0.05em;
+
+@mixin H2 {
+  font-family: $h1FontFamily;
+  font-size: $H2Size;
+  line-height: $H2LH;
+  font-weight: $H2Weight;
+  letter-spacing: $H2LS;
+}
+
+$H3Size:21px;
+$H3LH:30px;
+$H3Weight:500;
+$H3LS:0.05em;
+
+@mixin H3 {
+  font-family: $mainFontFamily;
+  font-size: $H3Size;
+  line-height: $H3LH;
+  font-weight: $H3Weight;
+  letter-spacing: $H3LS;
+}
+
+$CaptionSize:21px;
+$CaptionLH:30px;
+$CaptionWeight:400;
+$CaptionLS:0.05em;
+
+@mixin Caption {
+  font-family: $mainFontFamily;
+  font-size: $CaptionSize;
+  line-height: $CaptionLH;
+  font-weight: $CaptionWeight;
+  letter-spacing: $CaptionLS;
+}
+
+$CommentSize:21px;
+$CommentLH:30px;
+$CommentWeight:600;
+$CommentLS:0.05em;
+
+@mixin Comment {
+  font-family: $mainFontFamily;
+  font-size: $CommentSize;
+  line-height: $CommentLH;
+  font-weight: $CommentWeight;
+  letter-spacing: $CommentLS;
+  font-style: italic;
+}
+
+$H4Size:16px;
+$H4LH:20px;
+$H4Weight:500;
+$H4LS:1.25;
+
+@mixin H4 {
+  font-family: $mainFontFamily;
+  font-size: $H4Size;
+  line-height: $H4LH;
+  font-weight: $H4Weight;
+  letter-spacing: $H4LS;
+}
+
+$SubSize:16px;
+$SubLH:24px;
+$SubWeight:400;
+$SubLS:0.05em;
+
+
+@mixin Sub {
+  font-family: $mainFontFamily;
+  font-size: $SubSize;
+  line-height: $SubLH;
+  font-weight: $SubWeight;
+  letter-spacing: $SubLS;
+}
+
+$mainSize:12px;
+$mainLH:18px;
+$mainWeight:500;
+$mainLS:0.05em;
+
+@mixin main {
+  font-family: $mainFontFamily;
+  font-size: $mainSize;
+  line-height: $mainLH;
+  font-weight: $mainWeight;
+  letter-spacing: $mainLS;
+}
+
+$simpleSize:12px;
+$simpleLH:18px;
+$simpleWeight:400;
+$simpleLS:0.05em;
+
+@mixin simple {
+  font-family: $mainFontFamily;
+  font-size: $simpleSize;
+  line-height: $simpleLH;
+  font-weight: $simpleWeight;
+  letter-spacing: $simpleLS;
+}
