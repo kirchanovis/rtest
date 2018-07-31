@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" /> 
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <h1 class="title">Добавление материала</h1>
       <div class="form">
-        <form method = "POST" onsubmit = "validate()">
+        <form id="form" method="post" >
           <div class="form__block">
-            <input type="text" class="form__text form__text_border form__text_max" placeholder="Заголовок" name="title" >
+            <input type="text" class="form__text form__text_border form__text_max" placeholder="Заголовок" name="title" required>
           </div>
           <div class="form__block">
-            <input type="text" class="form__text form__text_border form__text_max" placeholder="Краткое описание" name="description" >
+            <input type="text" class="form__text form__text_border form__text_max" placeholder="Краткое описание" name="description">
           </div>
           <div class="form__block">
             <div class="form__elem form__elem_hor form__elem_padding">
-              <select name="category" placeholder="Рубрика" class="form__select form__select_one form__select_border">
+              <select name="category" placeholder="Рубрика" class="form__select form__select_one form__select_border" required>
                 <option value="" disabled selected>Рубрика</option>
-                <option value="news">Новости</option>
-                <option value="science">Наука</option>
-                <option value="tech">Технологии</option>
+                <option value="Новости">Новости</option>
+                <option value="Наука">Наука</option>
+                <option value="Технологии">Технологии</option>
               </select>
             </div>
             <div class="form__elem form__elem_hor form__elem_padding">
-              <select name="author" class="form__select form__select_one form__select_border">
+              <select name="author" class="form__select form__select_one form__select_border" required>
                 <option value="" disabled selected>Автор</option>
-                <option value="constantin">Константин Константинопольский</option>
-                <option value="senya">Сеня Петровский</option>
+                <option value="Константин Константинопольский">Константин Константинопольский</option>
+                <option value="Сеня Петровский">Сеня Петровский</option>
               </select>
             </div>
             <div class="form__elem form__elem_hor form__elem_padding">
-              <input type="date" class="form__date form__date_one form__date_border" name="date">
+              <input type="date" class="form__date form__date_one form__date_border" name="date" required>
             </div>
             <div style="clear: both;"></div>
           </div>
@@ -51,7 +52,10 @@
           </form>
         </div>
       </div>
-        <div class="news">
+      <div id="news" class="news">
+   
+      </div>
+        <!--<div class="news">
           <div class="news__block news__padding news__block_big">
             <div class="news__category news__category_bg">Технологии</div>
             <div class="news__background-photo" style="background-image: url(../img/news1.png)"></div>
@@ -87,7 +91,7 @@
             <div class="news__footer">22.03 • 12:00 • Сидор Сидоров</div>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
     <script src="main.js"></script>
   </body>
