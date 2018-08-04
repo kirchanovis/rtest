@@ -6,6 +6,7 @@ class FormView {
     constructor() {
         this.form = document.getElementById('form');
         this.form.onsubmit = this.onSubmitForm;
+        localStorage.removeItem("news");
         if(localStorage.getItem("news")) {
             this.load();
         }
